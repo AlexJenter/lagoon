@@ -202,9 +202,6 @@ sub vcl_hit {
 }
 
 sub vcl_backend_response {
-  # Temporarily disable streaming on files to be tested and removed after Varnish 4.1.x upgrade
-  set beresp.do_stream = false;
-
   # Allow items to be stale if needed.
   set beresp.grace = 6h;
 
