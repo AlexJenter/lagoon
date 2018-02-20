@@ -25,10 +25,16 @@ ENV TMPDIR=/tmp TMP=/tmp HOME=/home ENV=/home/.bashrc BASH_ENV=/home/.bashrc
 RUN fix-permissions /usr/share/kibana
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ENV NODE_OPTIONS="--max-old-space-size=200"
 =======
+=======
+>>>>>>> 73-elasticsearch-alerting
 # tells the local development environment on which port we are running
 ENV LAGOON_LOCALDEV_HTTP_PORT=5601
 
 ENV NODE_OPTIONS="--max-old-space-size=200"
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 73-elasticsearch-alerting
