@@ -9,7 +9,7 @@ You find these Files [here](https://github.com/amazeeio/lagoon/tree/master/docs/
 - `.lagoon.yml` - They main file that will be used by Lagoon to understand what should be deployed and many more things. This file has some sensible Drupal defaults, if you like to edit or modify, please check the specific [Documentation for .lagoon.yml]()
 - `docker-compose.yml`, `.dockerignore`  and `Dockerfile.*` - These files are used to run your Local Drupal Development enviornment, it tells docker which services to start and how to build them. These contain sensible defaults and many commented lines, it should be pretty much self describing. If you like more, see [Documentation for docker-compose.yml]()
 - `sites/default/*` - These .php and .yml files teach Drupal how to communicate with Lagoon containers and this locally and in production. It also provides an easy system for specific overrides in development and production environments. Unlike other Drupal Hosting Systems, Lagoon never ever injects Drupal Settings files into your Drupal. Therefore you can edit them to your wish. Like all other files they contain sensible defaults and some commented parts.
-- `drush/alises.drushrc.php` - These files are specific to Drush and tell Drush how to talk to the Lagoon GraphQL API in order to learn about all Site Aliases there are.
+- `drush/aliases.drushrc.php` - These files are specific to Drush and tell Drush how to talk to the Lagoon GraphQL API in order to learn about all Site Aliases there are.
 - `drush/drushrc.php` - Some sensible defaults for Drush Commands.
 
 ### Remark to `.gitignore`
